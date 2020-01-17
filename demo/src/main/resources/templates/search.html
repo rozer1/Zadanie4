@@ -20,8 +20,8 @@
     <tbody>
     <tr th:each="worker : ${workersList}">
         <td><span th:text="${worker.id}"> id </span></td>
-        <td><span th:text="${worker.familyName}"> Nazwisko </span></td>
-        <td><span th:text="${worker.givenName}"> Imie </span></td>
+        <td><span th:text="${worker.surname}"> Nazwisko </span></td>
+        <td><span th:text="${worker.name}"> Imie </span></td>
         <td>
             <form th:action="@{'/download/{id}'(id=${worker.id})}">
                 <button type="submit"><b>Generate</b></button>
